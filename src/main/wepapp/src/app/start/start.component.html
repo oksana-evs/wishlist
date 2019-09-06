@@ -1,0 +1,29 @@
+<p>Create new wishlist!</p>
+<form [formGroup]="wishlist" (ngSubmit)="onSubmit(wishlist)">
+
+  <label>
+    Name:
+    <input type="text" formControlName="name">
+  </label>
+  <br/><br/>
+
+  <label>
+    First Item:
+    <input type="text" formControlName="item1">
+  </label>
+  <br/><br/>
+
+  <label>
+    Second Item:
+    <input type="text" formControlName="item2">
+  </label>
+  <br/><br/>
+
+  <label>
+    Third Item:
+    <input type="text" formControlName="item3">
+  </label>
+  <br/><br/>
+  <button type="submit">Create</button>
+
+</form>
